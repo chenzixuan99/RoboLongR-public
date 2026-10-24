@@ -25,7 +25,7 @@
   <div class="nav wrap">
     <a class="brand" href="#" aria-label="RoboLongR home"><img class="brand-icon" src="assets/robolongr-icon.png" alt="" width="44" height="44">RoboLongR<span class="brand-dot">.</span></a>
     <nav aria-label="Main navigation"><a href="#method">Method</a><a href="#results">Results</a><a href="#real-world">Real robot</a><a href="#resources">Resources</a></nav>
-    <a class="nav-paper" href="assets/robolongr-paper.pdf?v=20261013" target="_blank" rel="noopener">Paper <span aria-hidden="true">↗</span></a>
+    <a class="nav-paper" href="assets/robolongr-paper.pdf?v=fdfcd5a6" target="_blank" rel="noopener">Paper <span aria-hidden="true">↗</span></a>
   </div>
 </header>
 <aside class="outline"><p>ON THIS PAGE</p><nav aria-label="Page outline"><a href="#overview" aria-current="true">Overview</a><a href="#video">Project video</a><a href="#method">Reward learning</a><a href="#results">Experimental results</a><a href="#real-world">Real-robot evaluation</a><a href="#resources">Paper & task resources</a><a class="outline-sub" href="#pretraining-tasks">88 pretraining tasks</a><a class="outline-sub" href="#evaluation-tasks">18 evaluation tasks</a><a class="outline-sub" href="#success-criteria">Success criteria</a><a href="#limitations">Scope & limitations</a></nav></aside>
@@ -33,7 +33,7 @@
   <section class="hero wrap" id="overview">
     <p class="eyebrow">LONG-HORIZON ROBOT LEARNING</p>
     <h1><span class="hero-name">RoboLongR:</span> Causally Consistent Rewards Teach Robots to Progressively Master Long-Horizon Manipulation</h1>
-    <div class="hero-actions"><a class="button primary" href="assets/robolongr-paper.pdf?v=20261013" target="_blank" rel="noopener"><span aria-hidden="true">↗</span> Read the paper</a><a class="button secondary" href="#video">Watch video <span aria-hidden="true">▷</span></a><a class="button secondary" href="#method">Explore the method <span aria-hidden="true">↓</span></a></div>
+    <div class="hero-actions"><a class="button primary" href="assets/robolongr-paper.pdf?v=fdfcd5a6" target="_blank" rel="noopener"><span aria-hidden="true">↗</span> Read the paper</a><a class="button secondary" href="#video">Watch video <span aria-hidden="true">▷</span></a><a class="button secondary" href="#method">Explore the method <span aria-hidden="true">↓</span></a></div>
   <section class="hero-abstract" aria-labelledby="abstract-title">
     <h2 class="abstract-label" id="abstract-title">Abstract</h2>
     <div class="abstract-copy"><p>Long-horizon manipulation requires actions whose validity depends on earlier interactions, yet visual progress can conceal missing task prerequisites. <strong>RoboLongR</strong> learns history-dependent rewards to guide policy adaptation to new tasks. Its central objective is causal consistency: aligning rewarded progress with prerequisites supported by execution history.</p><p>Stage-shuffle supervision encourages execution-order sensitivity, recurrent memory preserves earlier interaction evidence, and two-round training refines trajectory segments using predicted progress. The rewards guide stage-conditioned behavior cloning and online reinforcement learning. Sparse terminal feedback triggers reward correction for repeated high-scoring failures.</p><p>Pretrained on 88 RLBench tasks and Open-X data, RoboLongR achieves <strong>31.8% success on 18 held-out tasks</strong> and <strong>57.5% across four real-robot tasks</strong>. Reward-level controls probe synthetic order sensitivity, while ablations examine component contributions to policy improvement.</p></div>
@@ -101,7 +101,7 @@
 
   <section class="section wrap" id="resources" aria-labelledby="resources-title">
     <div class="section-top"><div><p class="eyebrow">05 / PAPER & RESOURCES</p><h2 id="resources-title">Explore the task split.</h2></div><p class="section-intro">88 pretraining tasks. 18 evaluation tasks.<br>A transparent separation of training and evaluation.</p></div>
-<div class="resource-links"><a href="assets/robolongr-paper.pdf?v=20261013" target="_blank" rel="noopener"><span>↗</span><strong>Research paper</strong><span>Read PDF ↗</span></a></div>
+<div class="resource-links"><a href="assets/robolongr-paper.pdf?v=fdfcd5a6" target="_blank" rel="noopener"><span>↗</span><strong>Research paper</strong><span>Read PDF ↗</span></a></div>
     <nav class="catalog-nav" aria-label="Task table navigation"><a href="#pretraining-tasks"><b>88</b> Pretraining tasks <span>↓</span></a><a href="#evaluation-tasks"><b>18</b> Evaluation tasks <span>↓</span></a><a href="#success-criteria"><b>04</b> Real-robot criteria <span>↓</span></a></nav>
     <section class="catalog-block" id="pretraining-tasks" aria-labelledby="pretraining-title">
       <div class="catalog-heading"><div><p class="eyebrow">REWARD PRETRAINING</p><h3 id="pretraining-title">88 pretraining tasks</h3><p>Successful demonstrations provide the foundation for reward learning.</p></div><span class="count-chip">1,760 demonstrations</span></div>
